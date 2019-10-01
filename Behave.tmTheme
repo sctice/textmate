@@ -18,7 +18,7 @@
 				<key>background</key>
 				<string>#2C333D</string>
 				<key>caret</key>
-				<string>#909FB5</string>
+				<string>#FFFFFF</string>
 				<key>foreground</key>
 				<string>#D2D8E1</string>
 				<key>invisibles</key>
