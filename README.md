@@ -58,3 +58,12 @@ I've modified the `New Item` (`⌘↩`) and `New Subitem` (`⌘⇧↩`) actions 
 # I almost always just want a new line, not to break the current line.
 index = ENV['TM_CURRENT_LINE'].length
 ```
+
+### Hyperlink Helper → Open Current URL
+
+This Menu Action (shortcut `enter`) opens hyperlinks under the caret. I like to link to local files and use this shortcut to open them quickly, but TextMate doesn't expand variables or `~`, making it annoying to "jump" up to the home directory. I've changed the action to the following in order to get it to replace a `~` at the beginning of the hyperlink with the `HOME` environment variable value.
+
+```sh
+file=$(cat)
+exec open "${file/#\~/$HOME}"
+```
