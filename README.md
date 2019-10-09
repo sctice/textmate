@@ -1,4 +1,4 @@
-# TextMate customization
+## TextMate customization
 
 Notes and configuration for bending TextMate to your will.
 
@@ -26,9 +26,11 @@ A version of the dark Behave TextMate theme personalized primarily for Markdown.
 
 ### Dawn theme (Light)
 
-My preferred light theme. I believe it's part of the standard install/bundles.
+My preferred light theme. I believe it's part of the standard install/bundles, but I've customized it along the lines of Behave. The customized version overrides the builtin one. Modifications:
 
-TODO: create a customized version with background-highlighted level 1 and 2 headings and save it here.
+- Background-highlighted level 1, 2 headings
+- Brighter default heading color
+- Bare hyperlinks colored like normal Markdown links
 
 ### Theme editor
 
@@ -45,7 +47,13 @@ Scopes:
 
 The easiest thing I've found is to open a `.tmTheme` file from the Finder and let TextMate install it. You'll be prompted for a bundle to add it to; choose `Themes`.
 
-If you're iterating on developing a theme with the online theme editor and already have a theme with the same name installed, TextMate will just make a copy of the theme that won't be visible in the theme list. Before installing, delete the existing theme from `~/Library/Application\ Support/TextMate/Bundles/Themes.tmBundle/Themes/`. You'll also need to quit TextMate and reopen, then select your theme to see any changes.
+If you're iterating on developing a theme with the online theme editor and already have a theme with the same name installed, TextMate will just make a copy of the theme that won't be visible in the theme list. Before installing, delete the existing theme from:
+
+```
+~/Library/Application\ Support/TextMate/Bundles/Themes.tmBundle/Themes/
+```
+
+You'll also need to quit TextMate and reopen, then select your theme to see any changes.
 
 ## Customization
 
